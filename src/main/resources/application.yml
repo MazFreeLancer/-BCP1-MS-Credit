@@ -1,7 +1,11 @@
 spring:
-  aplication:
+  application:
     name: ms-credit
+  profiles:
+    active:
+      - dev #(2)
+  config:
+    import: optional:configserver:http://localhost:9010
   cloud:
     config:
-      enabled: true
-      uri: http://localhost:8084
+      profile: dev
