@@ -1,4 +1,4 @@
-package com.nttada.bcp1.mscredit.modelo;
+package com.nttada.bcp1.mscredit.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +16,10 @@ public class Credit {
     @Id
     private String id;
     private String idCustomer;
-    private String creditBalance;
-    private String creditLimit;
-    private CreditType creditType;
+    private String cardNumber;
+    private String creditType;
+    private String accountNumber;
+    private Float balance;
+    private Float credit;
+    private Float debt;
 }
